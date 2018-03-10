@@ -1,9 +1,7 @@
 package com.brandon28139apps.rutherfordcountyguide;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -12,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -23,14 +23,6 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -80,18 +72,30 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        if (id == R.id.nav_News) {
+            Intent intent = new Intent(getApplicationContext(), NewsActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_Videos) {
+            Intent intent = new Intent(getApplicationContext(), activityVideos.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_Photos) {
+            Intent intent = new Intent(getApplicationContext(), activityPhotos.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_Events) {
+            Intent intent = new Intent(getApplicationContext(), activityEvents.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_PlacestoSee) {
+            Intent intent = new Intent(getApplicationContext(), activityPlacestoSee.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_PlacestoStay) {
+            Intent intent = new Intent(getApplicationContext(), activityPlacestoStay.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_ThingtoDo) {
+            Intent intent = new Intent(getApplicationContext(), activityThingtoDo.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_History) {
+            Intent intent = new Intent(getApplicationContext(), activityHistory.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
