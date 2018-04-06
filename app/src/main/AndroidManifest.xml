@@ -30,7 +30,8 @@
         <activity android:name=".activityPlacestoSee" />
         <activity android:name=".activityPlacestoStay" />
         <activity android:name=".activityThingtoDo" />
-        <activity android:name=".activityHistory"></activity>
+        <activity android:name=".activityHistory" />
+
     </application>
 
 </manifest>

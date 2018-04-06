@@ -6,11 +6,11 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_News"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/icon_news"
             android:title="News" />
         <item
             android:id="@+id/nav_Photos"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_menu_camera"
             android:title="Photos" />
         <item
             android:id="@+id/nav_Videos"
@@ -18,20 +18,32 @@
             android:title="Videos" />
         <item
             android:id="@+id/nav_Events"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_date_range_black_24dp"
             android:title="Events" />
         <item
             android:id="@+id/nav_PlacestoSee"
+            android:icon="@drawable/ic_visibility_black_24dp"
             android:title="Places to See" />
         <item
             android:id="@+id/nav_PlacestoStay"
+            android:icon="@drawable/ic_hotel_black_24dp"
             android:title="Places to Stay" />
         <item
             android:id="@+id/nav_ThingtoDo"
+            android:icon="@drawable/ic_directions_bike_black_24dp"
             android:title="Things to Do" />
         <item
+            android:id="@+id/nav_PlacestoEat"
+            android:icon="@drawable/ic_restaurant_black_24dp"
+            android:title="Places to Eat" />
+        <item
             android:id="@+id/nav_History"
+            android:icon="@drawable/ic_book_black_24dp"
             android:title="History" />
+        <item
+            android:id="@+id/nav_ContactMe"
+            android:icon="@drawable/ic_mail_black_24dp"
+            android:title="Contact Me" />
     </group>
 
 </menu>
